@@ -1,5 +1,6 @@
 document.getElementById("mainTitle").innerText = "Point and click adventure";
 
+const offsetCharacter = 12;
 const gameWindow = document.getElementById("gameWindow");
 const mainCharacter = document.getElementById("mainCharacter");
 
@@ -10,6 +11,6 @@ gameWindow.onclick = function(e) {
     var y = e.clientY - rect.top; //ypos in element
     console.log(x + " " + y);
 
-    mainCharacter.style.left = x+"px";
-    mainCharacter.style.top = y+"px";
+    mainCharacter.style.left = x - offsetCharacter +"px";
+    mainCharacter.style.top = y - offsetCharacter +"px";
 }

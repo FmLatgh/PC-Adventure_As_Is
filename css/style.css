@@ -33,6 +33,22 @@ body {
     background-color: #fff;
 }
 
+#door1 {
+    width: 10px;
+    height: 12px;
+    left: 580px;
+    top: 113px;
+    background-color: #fff;
+}
+
+#door2 {
+    width: 10px;
+    height: 12px;
+    left: 152px;
+    top: 542px;
+    background-color: red;
+}
+
 .gameObject {
     position: absolute;
     transition: all 1s ease-in-out;
