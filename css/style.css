@@ -17,4 +17,27 @@ body {
     background-color: midnightblue;
     grid-row-start: 2;
     grid-column-start: 2;
+    position: relative;
+}
+
+#mainCharacter {
+    left: 4px;
+    top: 523px;
+}
+
+.gameObject {
+    position: absolute;
+    /*background-color: #fff;*/
+}
+
+.foreground {
+    z-index: 1000;
+}
+
+.character {
+    z-index: 100;
+}
+
+.background {
+    z-index: 0;
 }
