@@ -10,6 +10,6 @@ gameWindow.onclick = function(e) {
     var y = e.clientY - rect.top; //ypos in element
     console.log(x + " " + y);
 
-    mainCharacter.style.left = x;
-    mainCharacter.style.top = y;
+    mainCharacter.style.left = x+"px";
+    mainCharacter.style.top = y+"px";
 }
