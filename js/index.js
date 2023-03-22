@@ -9,7 +9,7 @@ gameWindow.onclick = function(e) {
     var rect = gameWindow.getBoundingClientRect();
     var x = e.clientX - rect.left; //xpos in element
     var y = e.clientY - rect.top; //ypos in element
-    console.log(x + " " + y);
+    console.log(e.target.id);
 
     mainCharacter.style.left = x - offsetCharacter +"px";
     mainCharacter.style.top = y - offsetCharacter +"px";
