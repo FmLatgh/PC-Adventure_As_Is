@@ -25,6 +25,14 @@ body {
     top: 523px;
 }
 
+#door1 {
+    width: 10px;
+    height: 15px;
+    left: 584px;
+    top: 120px;
+    background-color: #fff;
+}
+
 .gameObject {
     position: absolute;
     transition: all 1s ease-in-out;
