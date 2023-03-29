@@ -1,6 +1,6 @@
 body {
     background-color: #000;
-    color: #fff;
+    color: #FFF;
     display: grid;
     grid-template-columns: auto 800px auto;
 }
@@ -11,49 +11,68 @@ body {
     text-align: center;
 }
 
+/*Dialogue bar*/
+#dialogueBar {
+    bottom: 0px;
+    left: 0px;
+    width: 800px;
+    height: 64px;
+}
+
+#dialogueContent {
+    position: relative;
+    width: 800px;
+    height: 64px;
+}
+
+#mainCharacterSpeech {
+    top: 0px;
+    left: 80px;
+}
+
+#brownBar {
+    position: absolute;
+    background-color: #442c1c;
+    width: 800px;
+    height: 32px;
+    bottom: 0px;
+}
+
 #gameWindow {
     width: 800px;
-    height: 600px;
-    background-color: midnightblue;
+    height: 608px;
+    background-color: blue;
     grid-row-start: 2;
     grid-column-start: 2;
     position: relative;
 }
 
 #mainCharacter {
-    left: 4px;
-    top: 523px;
-}
-
-#door1 {
-    width: 10px;
-    height: 12px;
-    left: 580px;
-    top: 113px;
-    background-color: #fff;
-}
-
-#door1 {
-    width: 10px;
-    height: 12px;
-    left: 580px;
-    top: 113px;
-    background-color: #fff;
+    left: 400px;
+    top: 170px;
 }
 
 #door2 {
     width: 10px;
-    height: 12px;
-    left: 152px;
-    top: 542px;
-    background-color: red;
+    height: 10px;
+    left: 580px;
+    top: 108px;
 }
 
+#door1 {
+    width: 10px;
+    height: 10px;
+    left: 150px;
+    top: 60px;
+}
+
+/*Classes*/
 .gameObject {
     position: absolute;
     transition: all 1s ease-in-out;
-    /*background-color: #fff;*/
+    /*background-color: #FFF;*/
 }
+
 
 .foreground {
     z-index: 1000;
@@ -67,22 +86,13 @@ body {
     z-index: 0;
 }
 
-.speechBubble1 {
-	position: relative;
-	background: #ffffff;
-	border-radius: .4em;
-}
-
-.speechBubble2 {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 53px solid transparent;
-	border-right-color: #ffffff;
-	border-left: 0;
-	margin-top: -53px;
-	margin-left: -53px;
+.speech-bubble {
+    background: #ffffff;
+    border-radius: 60px;
+    color: #000;
+    padding: 5px 5px 5px 20px;
+    font-size: 12px;
+    opacity: 1;
+    width: 300px;
+    transition: all 1s ease-in-out;
 }
