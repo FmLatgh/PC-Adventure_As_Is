@@ -66,3 +66,23 @@ body {
 .background {
     z-index: 0;
 }
+
+.speechBubble1 {
+	position: relative;
+	background: #ffffff;
+	border-radius: .4em;
+}
+
+.speechBubble2 {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 53px solid transparent;
+	border-right-color: #ffffff;
+	border-left: 0;
+	margin-top: -53px;
+	margin-left: -53px;
+}
